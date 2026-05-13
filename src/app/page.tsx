@@ -1,4 +1,4 @@
-use client';
+'use client';
 
 import { useEffect, useState } from 'react';
 import { Clock3, Link2, Printer, Share2 } from 'lucide-react';
