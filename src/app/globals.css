@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(47, 125, 70, 0.12), transparent 34rem),
+    linear-gradient(180deg, #fffdf8 0%, #eef8f0 100%);
+  color: #17201a;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: #f2d6a2;
+  color: #17201a;
+}
+
+.focus-ring {
+  @apply focus:outline-none focus-visible:ring-4 focus-visible:ring-leaf/25 focus-visible:ring-offset-2 focus-visible:ring-offset-bone;
+}
+
+@media print {
+  .screen-shell {
+    background: #ffffff !important;
+  }
+}
